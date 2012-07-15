@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>edu.sjtu.cdmp</groupId>
+	<artifactId>cdmp-pom</artifactId>
+	<packaging>pom</packaging>
+	<name>Parent POM for Cep based Digital Marketing Platform</name>
+	<version>0.0.1-SNAPSHOT</version>
+	<inceptionYear>2012</inceptionYear>
+	<issueManagement>
+		<system>Jira</system>
+		<url>https://localhost/browse/cdmp</url>
+	</issueManagement>
+	<developers>
+		<developer>
+			<name>Jim Jiang</name>
+			<email>jlj008@163.com</email>
+			<organization>SJTU</organization>
+			<timezone>+8</timezone>
+		</developer>
+	</developers>
+	<dependencies>
+		<dependency>
+			<artifactId>junit</artifactId>
+			<groupId>junit</groupId>
+			<version>4.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<artifactId>commons-logging</artifactId>
+			<groupId>commons-logging</groupId>
+			<version>1.1.1</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.0</version>
+				<configuration>
+					<useReleaseProfile>false</useReleaseProfile>
+				</configuration>
+			</plugin>
+		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav</artifactId>
+				<version>1.0-beta-2</version>
+			</extension>
+		</extensions>
+	</build>
+</project>
