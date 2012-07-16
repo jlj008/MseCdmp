@@ -72,12 +72,8 @@
 		<!-- Main dependency's version -->
 		<tiles.version>2.1.4</tiles.version>
 		<freemarker.version>2.3.15</freemarker.version>
-		<!-- 
 		<spring.version>3.0.5.RELEASE</spring.version>
 		<hibernate.version>3.5.1-Final</hibernate.version>
-		 -->
-		<spring.version>2.5.6</spring.version>
-		<hibernate.version>3.2.5.ga</hibernate.version>
 		<cxf.version>2.2.4</cxf.version>
 		<activemq.version>5.3.0</activemq.version>
 
